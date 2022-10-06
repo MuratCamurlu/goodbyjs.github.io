@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, darkblue, red);
+}
+.logo img {
+  width: 50px;
+}
+.navbar .nav-ul {
+  /* border: 1px solid red; */
+  margin-top: 2vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .nav-ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar .nav-ul li a:hover {
+  box-shadow: 1px 3px 3px 2px;
+  background-color: gold;
+  color: black;
+}
+.anasayfa {
+  width: 100%;
+  height: 80vh;
+  background-image: url("https://i4.hurimg.com/i/hurriyet/75/750x422/5a549ab718c77425d86c99c7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.anasayfa .saat-icerik {
+  width: 20vw;
+  /* border: 1px solid red; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.saat-icerik .guncel-saat {
+  /* border: 1px solid red; */
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: red;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(180, 180, 221);
+}
+.duyuru p {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.duyuru span {
+  transition: all 2s;
+}
+.duyuru span:hover {
+  transform: rotateY(360deg);
+}
+
+@media screen and (min-width: 200px) and (max-width: 750px) {
+  .navbar .logo img {
+    display: none;
+  }
+  .navbar .nav-ul {
+    gap: 1rem;
+    margin: auto;
+  }
+  .anasayfa .saat-icerik {
+    width: 100%;
+  }
+  .saat-icerik .guncel-saat {
+    margin: auto;
+  }
+}

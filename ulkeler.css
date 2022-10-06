@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i4.hurimg.com/i/hurriyet/75/750x0/5975e2047af5071c0c045963.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn {
+  margin-top: 1rem;
+  background-color: red;
+  color: wheat;
+}
+.btn:hover {
+  background-color: darkblue;
+  color: palevioletred;
+  box-shadow: 1px 3px 3px 1px;
+}

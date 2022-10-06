@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font: 1rem/1.3 "Roboto", sans-serif;
+  background: url("https://www.ha-ber.com/wp-content/uploads/2021/03/10-Mart-2021-Carsamba-Almanyada-hava-durumu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: wheat;
+  padding: 70px;
+}
+button {
+  cursor: pointer;
+}
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.top-banner {
+  color: white;
+}
+.top-banner form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.top-banner form input {
+  font-size: 2rem;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+
+.top-banner form input::placeholder {
+  color: grey;
+}
+
+.top-banner form button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 15px 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background-image: url("https://m.media-amazon.com/images/I/51FS9VnMlWL._AC_SY780_.jpg");
+}
+
+.top-banner form button:hover {
+  background-image: url("https://hthayat.haberturk.com/im/2016/03/15/ver1524560815/1034211_1920x1080.jpg");
+  box-shadow: 1px 3px 3px 1px;
+}
+
+.top-banner form .msg {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  max-width: 450px;
+  min-height: 40px;
+}
+.ajax-section {
+  margin: 70px 0 20px;
+}
+.ajax-section .cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ajax-section .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background: white;
+  color: #53627c;
+}
+.ajax-section .city::after {
+  content: "";
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: white;
+}
+.ajax-section figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.ajax-section .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+}
+.ajax-section .city sup {
+  font-size: 0.5em;
+}
+
+.ajax-section .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: var(--text_light);
+  background: rgb(253, 104, 5);
+}
+
+.ajax-section .city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 30px;
+  }
+
+  .ajax-section .cities {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .heading,
+  .ajax-section .city-temp {
+    font-size: 3rem;
+  }
+
+  .ajax-section {
+    margin-top: 20px;
+  }
+
+  .top-banner form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-banner form input,
+  .top-banner form button {
+    width: 100%;
+  }
+
+  .top-banner form button {
+    margin: 20px 0 0 0;
+  }
+
+  .top-banner form .msg {
+    position: static;
+    max-width: none;
+    min-height: 0;
+    margin-top: 10px;
+  }
+
+  .ajax-section .cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 15px;
+  }
+
+  .ajax-section .cities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

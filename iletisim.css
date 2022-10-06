@@ -1,0 +1,26 @@
+.card {
+  padding-top: 20vh;
+}
+.linkedin {
+  background-image: url("https://kinsta.com/wp-content/uploads/2018/09/linkedin-statistics.png");
+  background-size: cover;
+}
+.gmail {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Logo_Gmail_%282015-2020%29.svg/2560px-Logo_Gmail_%282015-2020%29.svg.png");
+  background-size: cover;
+  background-position: center;
+}
+.github {
+  background-image: url("https://png.pngtree.com/element_our/png_detail/20180930/github-icon-design-vector-png_115671.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.duman {
+  background-image: url("https://www.dunyabizim.com/images/haberler/2019/09/iletisim_destani_1_bolum_dedikodu_ve_dumanla_haberlesme_h37328_d7d70.jpg");
+  background-size: cover;
+}
+.btn:hover {
+  background-color: red;
+  box-shadow: 1px 3px 3px black;
+  color: black;
+}
